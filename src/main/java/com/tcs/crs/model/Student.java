@@ -9,13 +9,55 @@ public class Student  implements Serializable {
 	private String firstName;
 	private String lastName;
 	private String emailId;
-	private String mobileNo;
+	private long mobileNo;
 	private String address;
-	private String dept;
+	private String dob;
 	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	public long getMobileNo() {
+		return mobileNo;
+	}
+	public void setMobileNo(long mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
 	
-	public Student(int id, String firstName, String lastName, String emailId, String mobileNo, String address,
-			String dept) {
+	public Student(long id, String firstName, String lastName, String emailId, long mobileNo, String address,
+			 String dob) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -23,112 +65,15 @@ public class Student  implements Serializable {
 		this.emailId = emailId;
 		this.mobileNo = mobileNo;
 		this.address = address;
-		this.dept = dept;
+		this.dob = dob;
 	}
-				
+	
 	public Student()
 	{
 		
 	}
-
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
-	}
-
-	/**
-	 * @param l the id to set
-	 */
-	public void setId(long l) {
-		this.id = l;
-	}
-
-	/**
-	 * @return the firstName
-	 */
-	public String getFirstName() {
-		return firstName;
-	}
-
-	/**
-	 * @param firstName the firstName to set
-	 */
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	/**
-	 * @return the lastName
-	 */
-	public String getLastName() {
-		return lastName;
-	}
-
-	/**
-	 * @param lastName the lastName to set
-	 */
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	/**
-	 * @return the emailId
-	 */
-	public String getEmailId() {
-		return emailId;
-	}
-
-	/**
-	 * @param emailId the emailId to set
-	 */
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
-
-	/**
-	 * @return the mobileNo
-	 */
-	public String getMobileNo() {
-		return mobileNo;
-	}
-
-	/**
-	 * @param mobileNo the mobileNo to set
-	 */
-	public void setMobileNo(String mobileNo) {
-		this.mobileNo = mobileNo;
-	}
-
-	/**
-	 * @return the address
-	 */
-	public String getAddress() {
-		return address;
-	}
-
-	/**
-	 * @param address the address to set
-	 */
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	/**
-	 * @return the dept
-	 */
-	public String getDept() {
-		return dept;
-	}
-
-	/**
-	 * @param dept the dept to set
-	 */
-	public void setDept(String dept) {
-		this.dept = dept;
-	}
 	
-	// toString to be used .....
+	
+	
 	
 }

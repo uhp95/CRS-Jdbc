@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tcs.crs.dao.StudentDAO;
+import com.tcs.crs.dao.StudentDAOImpl;
 import com.tcs.crs.model.Courses;
 import com.tcs.crs.model.Grades;
 import com.tcs.crs.model.PayFee;
@@ -53,7 +53,7 @@ import com.tcs.crs.model.Student;
 public class StudentControllerAPI {
 
 	@Autowired
-	private StudentDAO crsdao;
+	private StudentDAOImpl crsdao;
 	
 	@RequestMapping(value = "/Registration", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON )
 	@ResponseBody
@@ -155,7 +155,7 @@ public class StudentControllerAPI {
 	public ResponseEntity Fee(PayFee fee)
 	{
 		String response = null;
-		response = crsdao.PayFee(fee);
+		response = crsdao.fees(fee);
 		
 		if(response.equals("Successful"))
 		{
